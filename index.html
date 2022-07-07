@@ -116,19 +116,48 @@
                 <li class="services-list__item">
                     <div class="services-list__overlay">
                     <p class="services-list__overlay-text">Десктопные приложения</p>
-                    <img src="./images/services/веб-разработка.jpg" alt="веб-разработка" width="370" class="services-list__overlay-image">
+                    <picture>
+                    <source srcset="./images/services/development-img.webp 1x, ./images/services/development-img@2x.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                    >
+                    <source 
+                    srcset="./images/services/development-img.jpg 1x, ./images/services/development-img@2x.jpg 2x"
+                    media="(min-width:1200px)"
+                    >
+                    <img src="./images/services/development-img.jpg" alt="веб-разработка" class="services-list__overlay-image">
+                    </picture>
                     </div>
                 </li>
                 <li class="services-list__item">
                     <div class="services-list__overlay">
                     <p class="services-list__overlay-text">Мобильные приложения</p>
-                    <img src="./images/services/мобильная.jpg" alt="мобильная разработка" width="370" class="services-list__overlay-image">
+                    <picture>
+                    <source 
+                    srcset="./images/services/mobile-img.webp 1x, ./images/services/mobile-img@2x.webp 2x"
+                    media="(min-width:1200px)" 
+                    type="image/webp">
+                    <source 
+                    srcset="./images/services/mobile-img.jpg 1x, ./images/services/mobile-img.jpg 2x"
+                    media="(min-width:1200px)"
+                    >
+                    <img src="./images/services/mobile-img.jpg" alt="мобильная разработка" class="services-list__overlay-image">
                     </div>
                 </li>
                 <li class="services-list__item">
                     <div class="services-list__overlay">
                     <p class="services-list__overlay-text">Дизайнерские решения</p>
-                    <img src="./images/services/дизайн.jpg" alt="веб-дизайн" width="370" class="services-list__overlay-image">
+                    <picture>
+                    <source 
+                    srcset="./images/services/design-img.webp 1x, ./images/services/design-img@2x.webp 2x"
+                    media="(min-width:1200px)" type="image/webp"
+                    >
+                    <source 
+                    srcset="./images/services/design-img.jpg 1x, ./images/services/design-img@2x.jpg 2x"
+                    media="(min-width:1200px)"
+                    >
+                    <img src="./images/services/design-img.jpg" alt="веб-дизайн" class="services-list__overlay-image">
+                    </picture>
                     </div>
                 </li>
             </ul>
