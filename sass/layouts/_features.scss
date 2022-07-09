@@ -42,10 +42,12 @@
     }
     .features-list__item {
         flex-basis: calc((100% - 90px) / 4);
-        @extend %align;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 30px;
         
-        &:not(:nth-child(4n)) {
+        &:nth-child(2n+1) {
             margin-right: 30px;
         }
         &:nth-last-child(-n + 2){
@@ -85,7 +87,9 @@
 }
 
 .features-list__link {
-    @extend %align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;

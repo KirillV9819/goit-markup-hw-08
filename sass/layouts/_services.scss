@@ -1,6 +1,8 @@
-
-@media screen and (min-width: 1200px) {
-
+.section--no-padding-top {
+    padding-top: 0px;
+    display: none;
+}
+@media screen and (min-width:1200px) {
     .section--no-padding-top {
         display: inline;
         padding-top: 0px;
@@ -17,7 +19,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--primary-title-color);
-        @extend %align;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         position: absolute;
         left: 0;
