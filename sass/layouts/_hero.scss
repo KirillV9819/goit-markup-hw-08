@@ -1,39 +1,85 @@
-// .hero__title {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: var(--primary-title-color);
-//     margin-bottom: 30px;
-//     margin-top: 0;
-// }
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.hero__button-text {
+    @extend %align;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--primary-title-color);
+}
+.hero {
+    text-align: center;
+    padding: 118px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #C4C4C4;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/hero-mobile/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+@media screen and (min-width:768) {
+    .hero{
+        padding: 118px 204px;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-tablet/hero-img.jpg);
+    } 
+}
+@media screen and (min-width:1200px) {
+    
+    .hero__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primary-title-color);
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
 
-// .hero__button-text {
-//     @extend %align;
-//     font-family: inherit;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.875;
-//     letter-spacing: 0.06em;
-//     color: var(--primary-title-color)
-// }
+    .hero__button-text {
+        @extend %align;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: var(--primary-title-color)
+    }
 
-// .hero {
-//     text-align: center;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     width: 1600px;
-//     height: 600px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     background: #C4C4C4;
-//     background-image: linear-gradient(to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)), 
-//         url(../images/Hero-Img.jpg);
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
+    .hero {
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #C4C4C4;
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/hero/hero-img.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
