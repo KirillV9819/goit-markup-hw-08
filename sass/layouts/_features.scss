@@ -5,13 +5,13 @@
 .features-list__item {
     flex-basis: calc((100% - 90px) / 4);
     flex-direction: column;
-    @extend %align;
 
     &:not(:nth-child(4n)) {
         margin-bottom: 30px;
     }
 }
 .features-list__title {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -28,7 +28,6 @@
 }
 .features-list__link {
     @extend %align;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background: var(--primary-backgroud-color);

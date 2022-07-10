@@ -1,11 +1,11 @@
 .section--no-padding-top {
     padding-top: 0px;
+    padding-bottom: 94px;
     display: none;
 }
 @media screen and (min-width:1200px) {
     .section--no-padding-top {
-        display: inline;
-        padding-top: 0px;
+        display: flex;
     }
 
     .services-list__overlay {
