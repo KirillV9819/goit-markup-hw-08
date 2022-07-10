@@ -13,18 +13,6 @@
 .contacts-list{
     display: none;
 } 
-.mobile-menu-open-button{
-    border: none;
-    background-color: transparent;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-
-    &:hover .mobile-menu-open-button__icon,
-    &:focus .mobile-menu-open-button__icon{
-    fill: var(--accent-color);
-    } 
-}
 @media screen and (min-width: 768px) {
     .mobile-menu-open-button{
         display: none;
