@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 
-.contact-form-checkbox-label, .modal-close-button, .footer-form__button-content, .our-social-networks__link, .our-social-networks__item, .clients-list__link, .clients-list__item, .social-network-list__item, .features-list-wrapper, .features-list, .hero__button-text {
+.contact-form-checkbox-label, .modal-close-button, .footer-form__button-content, .our-social-networks__link, .our-social-networks__item, .clients-list__link, .clients-list__item, .social-network-list__item, .features-list-wrapper, .hero__button-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,12 +586,11 @@ img {
     line-height: 1.36;
   }
 }
-.features-list {
-  flex-direction: column;
-}
-
-.features-list__item:nth-child(-n+3) {
+.features-list__item {
   margin-bottom: 30px;
+}
+.features-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .features-list__title {
@@ -613,6 +612,7 @@ img {
 }
 
 .features-list-wrapper {
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background: var(--primary-backgroud-color);
@@ -621,48 +621,21 @@ img {
 
 @media screen and (min-width: 768px) {
   .features-list {
-    gap: 30px;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: unset;
+    gap: 30px;
   }
   .features-list__item {
+    margin: 0;
     flex-basis: calc((100% - 30px) / 2);
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-list {
-    display: flex;
-    flex-wrap: wrap;
+    gap: none;
   }
-  .features-list .features-list__item {
+  .features-list__item {
     flex-basis: calc((100% - 90px) / 4);
-    margin-bottom: 0;
-  }
-  .features-list__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom: 10px;
-  }
-  .features-list__text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-  }
-  .features-list-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background: var(--primary-backgroud-color);
-    border-radius: 4px;
   }
 }
 .section--no-padding-top {

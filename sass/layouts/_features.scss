@@ -1,9 +1,9 @@
-.features-list {
-    @extend %align;
-    flex-direction: column;
-}
-.features-list__item:nth-child(-n + 3) {
+.features-list__item{
     margin-bottom: 30px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 .features-list__title {
     text-align: center;
@@ -15,67 +15,131 @@
     color: var(--primary-text-color);
     margin-bottom: 10px;
 }
+
 .features-list__text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
 .features-list-wrapper {
     @extend %align;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     background: var(--primary-backgroud-color);
     border-radius: 4px;
 }
 
-@media screen and (min-width:768px) {
-    .features-list {
-    gap: 30px;
-    flex-wrap: wrap;
-    flex-direction: unset;
+@media screen and (min-width: 768px) {
+    .features-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
     .features-list__item {
+        margin: 0;
         flex-basis: calc((100% - 30px) / 2);
-        margin-bottom: 0;
-    }
+    } 
 }
 @media screen and (min-width: 1200px) {
-.features-list {
-    display: flex;
-    flex-wrap: wrap;
+    
+    .features-list{
+        // flex-wrap: nowrap;
+        gap: none;
+    }
+    .features-list__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
 }
 
-.features-list .features-list__item {
-    flex-basis: calc((100% - 90px) / 4);
-    margin-bottom: 0;
-}
 
-.features-list__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom: 10px;
-}
 
-.features-list__text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-}
 
-.features-list-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background: var(--primary-backgroud-color);
-    border-radius: 4px;
-}
-}
+
+
+
+
+// .features-list {
+//     @extend %align;
+//     flex-direction: column;
+// }
+// .features-list__item:nth-child(-n + 3) {
+//     margin-bottom: 30px;
+// }
+// .features-list__title {
+//     text-align: center;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--primary-text-color);
+//     margin-bottom: 10px;
+// }
+// .features-list__text {
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-text-color);
+// }
+// .features-list-wrapper {
+//     @extend %align;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     background: var(--primary-backgroud-color);
+//     border-radius: 4px;
+// }
+
+// @media screen and (min-width:768px) {
+//     .features-list {
+//     gap: 30px;
+//     flex-wrap: wrap;
+//     flex-direction: unset;
+//     }
+//     .features-list__item {
+//         flex-basis: calc((100% - 30px) / 2);
+//         margin-bottom: 0;
+//     }
+// }
+// @media screen and (min-width: 1200px) {
+// .features-list {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .features-list .features-list__item {
+//     flex-basis: calc((100% - 90px) / 4);
+//     margin-bottom: 0;
+// }
+
+// .features-list__title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--primary-text-color);
+//     margin-bottom: 10px;
+// }
+
+// .features-list__text {
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-text-color);
+// }
+
+// .features-list-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 270px;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     background: var(--primary-backgroud-color);
+//     border-radius: 4px;
+// }
+// }
