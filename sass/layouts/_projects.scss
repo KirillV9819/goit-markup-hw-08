@@ -73,6 +73,14 @@
         display: flex;
         flex-wrap: wrap; 
     }
+    .project-cards__link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .project-cards__content {
+        flex-grow: 1;
+    }
     .project-cards__item {
         flex-basis: calc((100% - 270px) / 9);
 
